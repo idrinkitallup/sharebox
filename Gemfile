@@ -11,6 +11,8 @@ gem 'devise'
 
 gem 'nifty-generators', :group => :development
 
+gem 'paperclip', '~> 2.3'
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
@@ -33,3 +35,4 @@ gem 'nifty-generators', :group => :development
 # group :development, :test do
 #   gem 'webrat'
 # end
+gem "mocha", :group => :test
