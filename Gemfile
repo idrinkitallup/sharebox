@@ -13,6 +13,9 @@ gem 'nifty-generators', :group => :development
 
 gem 'paperclip', '~> 2.3'
 
+gem 'aws-s3'
+gem 'aws-sdk'
+
 # Use unicorn as the web server
 # gem 'unicorn'
 

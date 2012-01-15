@@ -29,6 +29,15 @@ GEM
       activesupport (= 3.0.3)
     activesupport (3.0.3)
     arel (2.0.10)
+    aws-s3 (0.6.2)
+      builder
+      mime-types
+      xml-simple
+    aws-sdk (1.2.6)
+      httparty (~> 0.7)
+      json (~> 1.4)
+      nokogiri (>= 1.4.4)
+      uuidtools (~> 2.1)
     bcrypt-ruby (3.0.1)
     builder (2.1.2)
     cocaine (0.2.1)
@@ -38,7 +47,11 @@ GEM
       warden (~> 1.1)
     erubis (2.6.6)
       abstract (>= 1.0.0)
+    httparty (0.8.1)
+      multi_json
+      multi_xml
     i18n (0.6.0)
+    json (1.6.4)
     mail (2.2.19)
       activesupport (>= 2.3.6)
       i18n (>= 0.4.0)
@@ -48,8 +61,11 @@ GEM
     mime-types (1.17.2)
     mocha (0.10.0)
       metaclass (~> 0.0.1)
+    multi_json (1.0.4)
+    multi_xml (0.4.1)
     mysql2 (0.2.18)
     nifty-generators (0.4.6)
+    nokogiri (1.5.0)
     orm_adapter (0.0.6)
     paperclip (2.5.0)
       activerecord (>= 2.3.0)
@@ -81,13 +97,17 @@ GEM
       polyglot
       polyglot (>= 0.3.1)
     tzinfo (0.3.31)
+    uuidtools (2.1.2)
     warden (1.1.0)
       rack (>= 1.0)
+    xml-simple (1.1.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  aws-s3
+  aws-sdk
   devise
   mocha
   mysql2 (< 0.3)
