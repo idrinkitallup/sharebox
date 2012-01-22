@@ -52,6 +52,9 @@ GEM
       multi_json
       multi_xml
     i18n (0.6.0)
+    jquery-rails (1.0.19)
+      railties (~> 3.0)
+      thor (~> 0.14)
     json (1.6.4)
     mail (2.2.19)
       activesupport (>= 2.3.6)
@@ -111,6 +114,7 @@ DEPENDENCIES
   aws-s3
   aws-sdk
   devise
+  jquery-rails (>= 1.0.12)
   mocha
   mysql2 (< 0.3)
   nifty-generators

@@ -32,7 +32,8 @@ class FoldersController < ApplicationController
   end
 
   def edit
-    @folder = current_user.folders.find(params[:id])
+    @folder = current_user.folders.find(params[:folder_id])  
+    @current_folder = @folder.parent
   end
 
   def update
@@ -45,8 +46,19 @@ class FoldersController < ApplicationController
   end
 
   def destroy
-    @folder = current_user.folders.find(params[:id])
-    @folder.destroy
-    redirect_to folders_url, :notice => "Successfully destroyed folder."
+    @folder = current_user.folders.find(params[:id])  
+    @parent_folder = @folder.parent #grabbing the parent folder  
+
+       #this will destroy the folder along with all the contents inside  
+       #sub folders will also be deleted too as well as all files inside  
+    @folder.destroy  
+    flash[:notice] = "Successfully deleted the folder and all the contents inside."  
+
+       #redirect to a relevant path depending on the parent folder  
+    if @parent_folder  
+      redirect_to browse_path(@parent_folder)  
+    else  
+      redirect_to root_url        
+    end
   end
 end

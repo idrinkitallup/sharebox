@@ -18,6 +18,8 @@ gem 'aws-sdk'
 
 gem 'acts_as_tree'
 
+gem 'jquery-rails', '>= 1.0.12'
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
