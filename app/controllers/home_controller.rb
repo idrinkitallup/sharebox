@@ -38,7 +38,7 @@ class HomeController < ApplicationController
 
       render :action => "index"  
     else  
-      flash[:error] = "Don't be cheeky! Mind your own assets!"  
+      flash[:error] = "No access"  
       redirect_to root_url  
     end  
   end

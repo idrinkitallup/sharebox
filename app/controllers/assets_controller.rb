@@ -74,7 +74,7 @@ class AssetsController < ApplicationController
       #redirect to amazon S3 url which will let the user download the file automatically  
       redirect_to asset.uploaded_file.url, :type => asset.uploaded_file_content_type  
     else  
-      flash[:error] = "Don't be cheeky! Mind your own assets!"  
+      flash[:error] = "Nope!"  
       redirect_to root_url  
     end  
   end
