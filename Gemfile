@@ -16,6 +16,8 @@ gem 'paperclip', '~> 2.3'
 gem 'aws-s3'
 gem 'aws-sdk'
 
+gem 'acts_as_tree'
+
 # Use unicorn as the web server
 # gem 'unicorn'
 

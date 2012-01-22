@@ -146,3 +146,43 @@ body {
     background:#DFF1FF;  
     border:1px solid #AFDDFF;  
 }
+
+.folder  {  
+    background:url("/images/512Generic.png") no-repeat scroll left center transparent;  
+	background-size: 20px 20px;
+}  
+
+.file {  
+    background:url("../images/512Sites.png") no-repeat scroll left center transparent; 
+	background-size: 20px 20px;
+}  
+.folder.asset_details:hover, .shared_folder.asset_details:hover, .file.asset_details:hover  {  
+    border:1px solid #DFDFDF;  
+}  
+.folder.asset_details:hover  {  
+    background:url("../images/512Generic.png") no-repeat scroll left center #EFEFEF;
+  	background-size: 20px 20px;
+}  
+.shared_folder  {  
+    background:url("../images/512Group.png") no-repeat scroll left center transparent;  
+	background-size: 20px 20px;
+}  
+.shared_folder.asset_details:hover  {  
+    background:url("../images/512Group.png") no-repeat scroll left center #EFEFEF;  
+	background-size: 20px 20px;
+}  
+.file.asset_details:hover  {  
+    background:url("../images/512Sites.png") no-repeat scroll left center #EFEFEF; 
+ 	background-size: 20px 20px;
+}
+  
+.breadcrumbs {  
+   margin:10px 0;  
+   font-weight:bold;  
+}  
+.breadcrumbs a {  
+   color:#1D96EF;  
+   text-decoration:none;  
+}
+
+
