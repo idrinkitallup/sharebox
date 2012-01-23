@@ -25,7 +25,7 @@ $(function () {
 						        "Share": function() {  
 						            //get the url to post the form data to  
 						            var post_url = $("#invitation_form form").attr("action");  
-
+											//alert($("#invitation_form form").serialize());
 						            //serialize the form data and post it the url with ajax  
 						            $.post(post_url,$("#invitation_form form").serialize(), null, "script");  
 
