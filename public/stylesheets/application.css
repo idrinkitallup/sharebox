@@ -148,32 +148,26 @@ body {
 }
 
 .folder  {  
-    background:url("/images/512Generic.png") no-repeat scroll left center transparent;  
-	background-size: 20px 20px;
+    background:url("/images/folder1.png") no-repeat scroll left center transparent;  
 }  
 
 .file {  
-    background:url("../images/512Sites.png") no-repeat scroll left center transparent; 
-	background-size: 20px 20px;
+    background:url("../images/file.png") no-repeat scroll left center transparent; 
 }  
 .folder.asset_details:hover, .shared_folder.asset_details:hover, .file.asset_details:hover  {  
     border:1px solid #DFDFDF;  
 }  
 .folder.asset_details:hover  {  
-    background:url("../images/512Generic.png") no-repeat scroll left center #EFEFEF;
-  	background-size: 20px 20px;
+    background:url("../images/folder1.png") no-repeat scroll left center #EFEFEF;
 }  
 .shared_folder  {  
-    background:url("../images/512Group.png") no-repeat scroll left center transparent;  
-	background-size: 20px 20px;
+    background:url("../images/shared.png") no-repeat scroll left center transparent;  
 }  
 .shared_folder.asset_details:hover  {  
-    background:url("../images/512Group.png") no-repeat scroll left center #EFEFEF;  
-	background-size: 20px 20px;
+    background:url("../images/shared.png") no-repeat scroll left center #EFEFEF;  
 }  
 .file.asset_details:hover  {  
-    background:url("../images/512Sites.png") no-repeat scroll left center #EFEFEF; 
- 	background-size: 20px 20px;
+    background:url("../images/file.png") no-repeat scroll left center #EFEFEF; 
 }
   
 .breadcrumbs {  

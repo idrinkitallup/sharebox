@@ -1,8 +1,9 @@
-Hey,  
+<p>Hi,</p> <br />  
   
-<%= @shared_folder.user.name %> has shared the "<%= @shared_folder.folder.name %>" folder on Cloudshare.   
-  
-Message from <%= @shared_folder.user.name %>:  
-"<%= @shared_folder.message %>"  
-  
-You can now login at <%= new_user_session_url %> and view the folder if you have an account already. If you don't have one,  you can sign up here at <%= new_user_registration_url %>   
+<p><%= @shared_folder.user.name %> has shared the "<%= @shared_folder.folder.name %>" folder on Cloudshare. </p>  
+<br />
+<p>Message from <%= @shared_folder.user.name %>:  </p><br />
+<p>"<%= @shared_folder.message %>"  </p>
+
+<br />  
+<p>You can now login at <%= new_user_session_url %> and view the folder if you have an account already. If you don't have one,  you can sign up here at <%= new_user_registration_url %> </p>  
